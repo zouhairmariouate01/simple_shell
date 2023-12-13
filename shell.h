@@ -174,13 +174,13 @@ char *convert_number(long int, int, int);
 void remove_comments(char *);
 
 /* toem_builtin.c */
-int _myexit(info_t *);
+int exit(info_t *);
 int _mycd(info_t *);
 int _myhelp(info_t *);
 
 /* toem_builtin1.c */
-int _myhistory(info_t *);
-int _myalias(info_t *);
+int _history(info_t *info);
+int _alias(info_t *info);
 
 /*toem_getline.c */
 ssize_t get_input(info_t *);
