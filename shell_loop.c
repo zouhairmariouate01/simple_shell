@@ -56,9 +56,9 @@ int find_builtin(info_t *info)
 {
 	int i, built_in_ret = -1;
 	builtin_table builtintbl[] = {
-		{"exit", _myexit},
+		{"exit", _miexit},
 		{"env", _myenv},
-		{"help", _myhelp},
+		{"help", _mihelp},
 		{"history", _myhistory},
 		{"setenv", _mysetenv},
 		{"unsetenv", _myunsetenv},
@@ -157,4 +157,3 @@ void fork_cmd(info_t *info)
 				print_error(info, "Permission denied\n");
 		}
 	}
-}

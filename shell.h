@@ -174,9 +174,9 @@ char *convert_number(long int, int, int);
 void remove_comments(char *);
 
 /* toem_builtin.c */
-int exit(info_t *);
-int _mycd(info_t *);
-int _myhelp(info_t *);
+int _miexit(info_t *);
+int change_directory(info_t *info);
+int help_command(info_t *info);
 
 /* toem_builtin1.c */
 int _history(info_t *info);
