@@ -2,7 +2,7 @@
 
 /**
  * _myenv - prints the current environment
- * @info: Structure containing potential arguments. Used to maintain
+ * @info:A structure containing potential arguments, ensuring
  *          constant function prototype.
  * Return: Always 0
  */
@@ -13,11 +13,11 @@ int _myenv(info_t *info)
 }
 
 /**
- * _getenv - gets the value of an environ variable
- * @info: Structure containing potential arguments. Used to maintain
- * @name: env var name
+ * _getenv - Retrieves the value of an environment variable.
+ * @info:A structure containing potential arguments, ensuring
+ * @name: env var name of the environment variable
  *
- * Return: the value
+ * Return: the value of the specified environment variable.
  */
 char *_getenv(info_t *info, const char *name)
 {
@@ -35,9 +35,9 @@ char *_getenv(info_t *info, const char *name)
 }
 
 /**
- * _mysetenv - Initialize a new environment variable,
+ * _mysetenv - Initialize a new environment variable, or modifies an existing one.
  *             or modify an existing one
- * @info: Structure containing potential arguments. Used to maintain
+ * @info: Structure containing potential arguments. maintaining
  *        constant function prototype.
  *  Return: Always 0
  */
