@@ -116,8 +116,6 @@ int hsh(info_t *, char **);
 int find_builtin(info_t *);
 void find_cmd(info_t *);
 void fork_cmd(info_t *);
-int _mihelp(info_t *info);
-int _mycd(info_t *info);
 
 /* toem_parser.c */
 int is_cmd(info_t *, char *);
@@ -176,13 +174,13 @@ char *convert_number(long int, int, int);
 void remove_comments(char *);
 
 /* toem_builtin.c */
-int _miexit(info_t *);
-int change_directory(info_t *info);
-int help_command(info_t *info);
+int _myexit(info_t *);
+int _mycd(info_t *);
+int _myhelp(info_t *);
 
 /* toem_builtin1.c */
-int _history(info_t *info);
-int _alias(info_t *info);
+int _myhistory(info_t *);
+int _myalias(info_t *);
 
 /*toem_getline.c */
 ssize_t get_input(info_t *);
