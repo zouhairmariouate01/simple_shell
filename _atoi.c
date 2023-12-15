@@ -1,8 +1,8 @@
 #include "shell.h"
 
 /**
- * in_teractive - returns true if shell is in_teractive
- * @info: struct address
+ *  interactive - checks if the shell is in interactive mode
+ * @info:a pointer to the info_t struct
  *
  * Return: 1 if in_teractive mode, 0 otherwise
  */
